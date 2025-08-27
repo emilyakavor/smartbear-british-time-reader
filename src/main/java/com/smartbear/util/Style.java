@@ -1,4 +1,4 @@
-package com.smartbear.smartbearemil.core;
+package com.smartbear.util;
 
 public enum Style {
     colloquial, digital;
