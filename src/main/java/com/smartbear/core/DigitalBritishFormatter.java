@@ -1,7 +1,8 @@
-package com.smartbear.util.format;
+package com.smartbear.core;
 
 import com.smartbear.util.ClockTime;
 import com.smartbear.util.NumberWords;
+import com.smartbear.util.SpokenTimeFormatter;
 
 public final class DigitalBritishFormatter implements SpokenTimeFormatter {
 

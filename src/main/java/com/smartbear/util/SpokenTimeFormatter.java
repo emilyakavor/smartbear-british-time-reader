@@ -1,6 +1,4 @@
-package com.smartbear.util.format;
-
-import com.smartbear.util.ClockTime;
+package com.smartbear.util;
 
 public interface SpokenTimeFormatter {
     String speak(ClockTime time);
