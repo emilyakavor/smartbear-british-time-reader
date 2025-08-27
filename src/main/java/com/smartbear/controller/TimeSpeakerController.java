@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 public class TimeSpeakerController {
 
     private final SpokenTimeService service;
-
     public TimeSpeakerController(SpokenTimeService service) {
         this.service = service;
     }
