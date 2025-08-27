@@ -1,4 +1,4 @@
-package com.smartbear.smartbearemil.core.format;
+package com.smartbear.util.format;
 
 final class NumberWords {
     private static final String[] ONES = {

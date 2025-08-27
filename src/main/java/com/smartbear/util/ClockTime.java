@@ -1,4 +1,4 @@
-package com.smartbear.smartbearemil.core;
+package com.smartbear.util;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

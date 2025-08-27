@@ -1,6 +1,7 @@
-package com.smartbear.smartbearemil.core.format;
+package com.smartbear.util.format;
 
-import com.smartbear.smartbearemil.core.ClockTime;
+import com.smartbear.util.ClockTime;
+import com.smartbear.util.NumberWords;
 
 public final class ColloquialBritishFormatter implements SpokenTimeFormatter {
 

@@ -1,8 +1,8 @@
-package com.smartbear.smartbearemil.core;
+package com.smartbear.util;
 
-import com.smartbear.smartbearemil.core.format.ColloquialBritishFormatter;
-import com.smartbear.smartbearemil.core.format.DigitalBritishFormatter;
-import com.smartbear.smartbearemil.core.format.SpokenTimeFormatter;
+import com.smartbear.util.format.ColloquialBritishFormatter;
+import com.smartbear.util.format.DigitalBritishFormatter;
+import com.smartbear.util.format.SpokenTimeFormatter;
 import org.springframework.stereotype.Service;
 
 @Service
