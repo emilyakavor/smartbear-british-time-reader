@@ -2,8 +2,11 @@ package com.smartbear.service;
 
 import com.smartbear.util.Style;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SpokenTimeServiceTest {
 
@@ -35,5 +38,32 @@ class SpokenTimeServiceTest {
 
     @Test void digital_example() {
         assertThat(svc.speak("06:32", Style.digital)).isEqualTo("six thirty two");
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "01:00, one o'clock",
+            "02:05, five past two",
+            "03:10, ten past three",
+            "04:15, quarter past four",
+            "05:20, twenty past five",
+            "06:25, twenty five past six",
+            "07:30, half past seven",
+            "08:35, twenty five to nine",
+            "09:40, twenty to ten",
+            "10:45, quarter to eleven",
+            "11:50, ten to twelve"
+    })
+    void speakTime_ShouldReturnCorrectBritishTime(String inputTime, String expectedOutput) {
+        // Given
+        var s = Style.of(null);
+        String result = svc.speak(inputTime, s);
+
+        // Assert
+        assertThat(result).isEqualTo(expectedOutput);
+
+        // Assert
+//        assertEquals(expectedOutput, result);
+//        verify(digitalBritishFormatter, times(1)).speak(clockTime);
     }
 }

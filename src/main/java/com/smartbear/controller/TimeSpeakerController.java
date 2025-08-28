@@ -43,7 +43,7 @@ public class TimeSpeakerController {
         var s = Style.of(style);
         String spokenTime = spokenTimeService.speak(time, s);
         SpokenTimeResponse response = new SpokenTimeResponse(time, s.name(), spokenTime);
-        return ResponseEntity.ok(response);
+        return response.spoken() == null ? ResponseEntity.badRequest().build(): ResponseEntity.ok(response);
     }
 
     @Operation(summary = "Health check endpoint")
