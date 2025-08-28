@@ -56,10 +56,6 @@ The challenge is to write a program that:
    ```bash
    java -jar target/smartbear-british-time-reader.jar
    ```
-   ✅ Output:
-   ```
-   noon
-   ```
 ---
 
 ## 🧪 Test Procedure
