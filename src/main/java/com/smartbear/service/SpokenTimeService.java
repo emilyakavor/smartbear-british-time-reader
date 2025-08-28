@@ -16,8 +16,8 @@ public class SpokenTimeService {
     public String speak(String hhmm, Style style) {
         var time = ClockTime.parse(hhmm);
         return switch (style) {
-            case colloquial -> colloquial.speak(time);
-            case digital    -> digital.speak(time);
+            case COLLOQUIAL -> colloquial.speak(time);
+            case DIGITAL -> digital.speak(time);
         };
     }
 }
