@@ -52,7 +52,7 @@ The challenge is to write a program that:
    ```bash
    mvn clean install
    ```
-3. Run the program (replace `12:00` with any time):
+3. Run the program:
    ```bash
    java -jar target/smartbear-british-time-reader.jar
    ```
